@@ -1,0 +1,84 @@
+{
+    "data": [
+        {
+            "columnId": "abc123",
+            "columnName": "Status",
+            "uniqueValues": ["New", "Qualified", "Disqualified"],
+            "columnType": "string",
+            "fromValue": "",
+            "toValue": ""
+        },
+        {
+            "columnId": "def456",
+            "columnName": "Priority",
+            "uniqueValues": ["High", "Medium", "Low"],
+            "columnType": "string",
+            "fromValue": "",
+            "toValue": ""
+        },
+        {
+            "columnId": "ghi789",
+            "columnName": "Lead Source",
+            "uniqueValues": ["Website", "Referral", "Cold Call"],
+            "columnType": "string",
+            "fromValue": "",
+            "toValue": ""
+        },
+        {
+            "columnId": "jkl012",
+            "columnName": "Sales Amount",
+            "uniqueValues": ["1000", "5000", "10000"],
+            "columnType": "number",
+            "fromValue": "",
+            "toValue": ""
+        },
+        {
+            "columnId": "mno345",
+            "columnName": "Created Date",
+            "uniqueValues": ["2023-01-01", "2023-06-15", "2023-12-31"],
+            "columnType": "date",
+            "fromValue": "",
+            "toValue": ""
+        },
+        {
+            "columnId": "pqr678",
+            "columnName": "Last Contacted",
+            "uniqueValues": ["2023-02-14", "2023-05-21", "2023-11-30"],
+            "columnType": "date",
+            "fromValue": "",
+            "toValue": ""
+        },
+        {
+            "columnId": "stu901",
+            "columnName": "Lead Score",
+            "uniqueValues": ["50", "75", "90"],
+            "columnType": "number",
+            "fromValue": "",
+            "toValue": ""
+        },
+        {
+            "columnId": "vwx234",
+            "columnName": "Annual Revenue",
+            "uniqueValues": ["50000", "100000", "200000"],
+            "columnType": "number",
+            "fromValue": "",
+            "toValue": ""
+        },
+        {
+            "columnId": "yzb567",
+            "columnName": "Industry",
+            "uniqueValues": ["Technology", "Healthcare", "Finance"],
+            "columnType": "string",
+            "fromValue": "",
+            "toValue": ""
+        },
+        {
+            "columnId": "cde890",
+            "columnName": "Employee Count",
+            "uniqueValues": ["10", "50", "200"],
+            "columnType": "number",
+            "fromValue": "",
+            "toValue": ""
+        }
+    ]
+}

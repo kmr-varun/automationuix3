@@ -1,0 +1,58 @@
+{
+  "id": "1",
+  "selected": true,
+  "name": "Item is Updated",
+  "setup": true,
+  "preview": false,
+  "createdBy": "thrthrh",
+  "updatedBy": "thrthrt",
+  "conditions": {
+    "columnId": "def456",
+    "columnName": "Priority",
+    "columnType": "string",
+    "uniqueValues": [
+      "High",
+      "Medium",
+      "Low"
+    ],
+    "fromValue": "High",
+    "toValue": "Low",
+    "operator": "changes",
+    "operatorString": "Changes",
+    "multi": true
+  },
+  "actions": {
+    "actions": [
+      {
+        "id": "1",
+        "name": "Send Mail",
+        "operation": "send_mail",
+        "setup": false,
+        "data": [
+          {
+            "name": "Send To",
+            "type": "email",
+            "value": [
+              "jane@example.com",
+              "john@example.com"
+            ]
+          },
+          {
+            "name": "Subject",
+            "type": "text",
+            "value": "as"
+          },
+          {
+            "name": "Attachment",
+            "type": "file"
+          },
+          {
+            "name": "body",
+            "type": "html",
+            "value": "<p>sdadas</p>"
+          }
+        ]
+      }
+    ]
+  }
+}

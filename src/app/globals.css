@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.ql-editor {
+  min-height: 200px;
+}
+.ql-toolbar.ql-snow {
+  border: 1px solid #848694 !important;
+  border-radius: 10px 10px 0px 0px;
+}
+.ql-container{
+  border: 1px solid #848694 !important;
+  border-radius: 0px 0px 10px 10px;
+  height: 200px;
+}
+/* Target the toolbar buttons */
+.ql-toolbar .ql-picker,
+.ql-toolbar .ql-picker-label,
+.ql-toolbar .ql-picker-options,
+.ql-toolbar .ql-stroke,
+.ql-toolbar .ql-fill,
+.ql-toolbar .ql-picker-label::before,
+.ql-toolbar .ql-icon svg {
+  outline: white !important;  /* Change SVG icon color */
+}
+
+/* Ensure button hover color is changed */
+.ql-toolbar .ql-picker:hover,
+.ql-toolbar .ql-picker-label:hover,
+.ql-toolbar .ql-picker-options:hover,
+.ql-toolbar .ql-stroke:hover,
+.ql-toolbar .ql-fill:hover,
+.ql-toolbar .ql-picker-label::before:hover,
+.ql-toolbar .ql-icon svg:hover {
+  outline: white !important;  /* Change SVG icon color on hover */
+}
+
+#customCheckbox input[type="checkbox"] {
+  appearance: none; /* Remove default checkbox */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #848694; /* Default border color */
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+#customCheckbox input[type="checkbox"]:checked {
+  background-color: #848694 !important; /* Background color when checked */
+  border-color: #848694 !important;
+
+}
+
+
+button .ql-stroke,
+.ql-picker-label .ql-stroke {
+  fill: none;
+  stroke: #848694 !important;
+}
+
+.ql-picker-label {
+  color: #848694;
+}
+
+button .ql-fill,
+.ql-picker-label .ql-fill {
+  fill: #848694 !important;
+  stroke: none;
+}
+
+button:hover .ql-stroke,
+.ql-picker-label:hover .ql-stroke {
+  fill: none;
+  stroke: white !important;
+}
+
+.ql-active .ql-stroke {
+  fill: none;
+  stroke: white !important;
+}
+
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  border: none;
+  color: white !important;
+}
+
+.ql-picker-item {
+  color: #848694 !important;
+}
+
+.ql-picker-item:hover {
+  color: white !important;
+}
+
+
+.ql-snow .ql-picker-options {
+  background-color: #242428 !important;
+  border-radius: 10px;
+  border: 1px solid #848694 !important;
+  outline: none !important;
+  border: none;
+}
+
+button:hover .ql-fill,
+.ql-picker-label:hover .ql-fill {
+  fill: white !important;
+  stroke: none;
+}
+
+.ql-active .ql-fill {
+  fill: white !important;
+  stroke: none;
+}

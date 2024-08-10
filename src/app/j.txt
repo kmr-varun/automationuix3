@@ -1,0 +1,21 @@
+triggers[status, changes, from, to] -> actions
+
+triggers
+    trigger
+        status
+        changes
+        from
+        to
+    integration
+        status
+        changes
+        from
+        to
+
+actions
+    action
+    integration
+    followupaction
+
+followupactions
+    action

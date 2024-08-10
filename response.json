@@ -1,0 +1,65 @@
+{
+  "automation": {
+    "trigger": {
+      "id": "1",
+      "selected": true,
+      "name": "Item is Updated",
+      "setup": true,
+      "preview": false,
+      "orgId": "varun",
+      "operationType": "Item is Updated",
+      "createdBy": "ggdgr",
+      "updatedBy": "rgdrgr"
+    },
+    "condition": {
+      "columnId": "def456",
+      "columnName": "Priority",
+      "columnType": "string",
+      "uniqueValues": [
+        "High",
+        "Medium",
+        "Low"
+      ],
+      "fromValue": "",
+      "toValue": "High",
+      "operator": "contains",
+      "operatorString": "Contains",
+      "multi": false
+    },
+    "action": {
+      "actions": [
+        {
+          "id": "1",
+          "name": "Send Mail",
+          "parameter": "text",
+          "setup": false,
+          "data": [
+            {
+              "name": "Send To",
+              "type": "email",
+              "value": [
+                "alice@example.com",
+                "bob@example.com"
+              ]
+            },
+            {
+              "name": "Subject",
+              "type": "text",
+              "value": "hghngh"
+            },
+            {
+              "name": "Attachment",
+              "type": "file",
+              "value": "image.png"
+            },
+            {
+              "name": "body",
+              "type": "html",
+              "value": "<p>hgmhgmghmghmghm</p>"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

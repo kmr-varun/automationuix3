@@ -1,0 +1,23 @@
+{
+  "trigger": {
+    "id": 123,
+    "selected": false,
+    "name": "Item Updates"
+  },
+  "conditions": [
+    {
+      "columnName": "",
+      "columnType": "",
+      "fromValue": "",
+      "toValue": ""
+    }
+  ],
+  "action": {
+    "ids": ["123", "123"],
+    "selected": true
+  },
+  "followupaction": {
+    "ids": ["123", "123"],
+    "selected": true
+  }
+}

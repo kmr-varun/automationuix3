@@ -1,0 +1,46 @@
+{
+    automation: {
+      trigger: {
+        id: '1',
+        selected: true,
+        name: 'Item is Updated',
+        operator: 'changes',
+        operatorString: 'Changes',
+        multi: true,
+        setup: true
+      },
+      condition: {
+        id: 'abc123',
+        columnName: 'Status',
+        columnType: 'string',
+        uniqueValues: [
+          'New',
+          'Qualified',
+          'Disqualified'
+        ],
+        fromValue: 'New',
+        toValue: 'Qualified'
+      },
+      action: {
+        actions: [
+          {
+            id: '1',
+            name: 'Send Mail',
+            type: 'sendmail',
+            parameter: 'text',
+            setup: false,
+            data: {}
+          },
+          {
+            id: '2',
+            name: 'Notify',
+            type: 'notify',
+            parameter: 'text'
+          }
+        ]
+      },
+      followupaction: {
+        actions: []
+      }
+    }
+  }

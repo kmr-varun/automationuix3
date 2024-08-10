@@ -1,0 +1,93 @@
+{
+  "id": 1,
+  "workflowData": [
+    {
+      "name": "Auto 1",
+      "desc": "Auto 1",
+      "entity": "pipeline",
+      "operation": "update",
+      "condition": {
+        "AND": [
+          {
+            "id": "1",
+            "selectedField": "name",
+            "operator": "equalsTo",
+            "valueGiven": "pravin",
+            "OrgId": 1
+          },
+          {
+            "id": "2",
+            "selectedField": "Amount",
+            "operator": "greaterThan",
+            "valueGiven": "500",
+            "OrgId": 1
+          }
+        ],
+        "OR": [
+          {
+            "id": "2",
+            "selectedField": "Amount",
+            "operator": "greaterThan",
+            "valueGiven": "500",
+            "OrgId": 1
+          }
+        ]
+      },
+      "action": [
+        {
+          "id": "1",
+          "type": "action",
+          "operation": "notify",
+          "dataFields": [
+            {
+              "name": "Email",
+              "type": "string",
+              "componentType": "email"
+            },
+            {
+              "name": "Subject",
+              "type": "string",
+              "componentType": "text"
+            },
+            {
+              "name": "Attach Your File",
+              "type": "file",
+              "componentType": "File"
+            },
+            {
+              "name": "Type message here...",
+              "type": "string",
+              "componentType": "text"
+            }
+          ],
+          "OrgId": 1
+        }
+      ],
+      "followupAction": [
+        {
+          "id": "1",
+          "type": "followaction",
+          "operation": "notify",
+          "dataFields": [
+            {
+              "name": "After",
+              "type": "dropdown",
+              "componentType": "dropdown"
+            }
+          ],
+          "OrgId": 1
+        }
+      ]
+    }
+  ],
+  "userData": [
+    {
+      "id": "L2w10VDydh",
+      "CreateBy": "66a8a68db0af64450fa5e10f",
+      "UpdatedBy": "66a8a68db0af64450fa5e10f",
+      "CreatedDate": "2024-07-31T11:44:17.783Z",
+      "UpdatedDate": "2024-07-31T11:44:17.783Z",
+      "OrgId": 1
+    }
+  ]
+}
